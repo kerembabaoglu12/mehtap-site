@@ -1,7 +1,7 @@
 import { supabase } from '@/lib/supabaseClient';
 import HomePageContent from './HomePageContent';
 
-export const revalidate = 60; // 1 dakika cache
+export const dynamic = 'force-dynamic';
 
 export default async function Home() {
   const { data: services } = await supabase

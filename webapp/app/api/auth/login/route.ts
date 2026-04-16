@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabaseClient';
+
+export const dynamic = 'force-dynamic';
 import bcrypt from 'bcrypt';
 import jwt from 'jsonwebtoken';
 
